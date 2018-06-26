@@ -15,6 +15,8 @@ class App < Sinatra::Base
 
     @consonants = words.count_of_consonants
 
+    @most_used_letter = words.most_used_letter
+
     erb :results
   end
 end
